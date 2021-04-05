@@ -2,19 +2,19 @@
 
 # Create Data for Plots ----
 # Data Sets
-tools_df <- tibble(
-    skill = c("R", "SQL","Spotfire","Power BI", "Excel","Knime"),
-    score = c(90,85,80, 90, 85,72)
+top_tools_df <- tibble(
+    skill = c("R", "SQL","Spotfire","Power BI", "Excel","Knime","Git"),
+    score = c(90,85,80, 90, 85,75,70)
 )
 
 
-skills_df <- tibble(
-    skill = c("Data Visualization","Communication","Machine Learning", "Analysis", "Data Wrangling"),
-    score = c(95,90, 80, 90, 94)
+soft_skills_df <- tibble(
+    skill = c("Data Visualization","Communication","intellectual curiosity", "proactive problem solving", "business sense", "critical thinking"),
+    score = c(92,95, 90, 90, 85,88)
 )
 
 
 
-write_rds(tools_df, "01_data/tools_df.rds")
-write_rds(skills_df, "01_data/skills_df.rds")
+write_rds(top_tools_df, "01_data/top_tools_df.rds")
+write_rds(soft_skills_df, "01_data/soft_skills_df.rds")
 
